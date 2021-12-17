@@ -49,6 +49,10 @@ TWILIO_AUTH_TOKEN =
 TWILIO_MESSAGING_SERVICE_SID = 
 ```
 
+## Resources 
+
+* [twilio](https://www.twilio.com/)
+* [getstream](https://getstream.io/activity-feeds/)
 
 
 
