@@ -10,12 +10,12 @@ import './App.css';
 
 const cookies = new Cookies();
 
-const apiKey = 'qgtk9ttyha7j';
+const apiKey = 'xva7f7f3zve2';
 const authToken = cookies.get("token");
 
 const client = StreamChat.getInstance(apiKey);
 
-if(authToken) {
+if (authToken) {
     client.connectUser({
         id: cookies.get('userId'),
         name: cookies.get('username'),
@@ -31,19 +31,21 @@ const App = () => {
     const [createType, setCreateType] = useState('');
     const [isCreating, setIsCreating] = useState(false);
     const [isEditing, setIsEditing] = useState(false);
+    console.log(authToken)
 
-    if(!authToken) return <Auth />
+    if (!authToken) return <Auth />
+    console.log(authToken)
 
     return (
         <div className="app__wrapper">
             <Chat client={client} theme="team light">
-                <ChannelListContainer 
+                <ChannelListContainer
                     isCreating={isCreating}
                     setIsCreating={setIsCreating}
                     setCreateType={setCreateType}
                     setIsEditing={setIsEditing}
                 />
-                <ChannelContainer 
+                <ChannelContainer
                     isCreating={isCreating}
                     setIsCreating={setIsCreating}
                     isEditing={isEditing}
