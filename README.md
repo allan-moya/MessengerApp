@@ -39,6 +39,7 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 1. Create a .env file for client folder 
 
+```
 STREAM_APP_ID = 
 STREAM_API_KEY = 
 STREAM_API_SECRET = 
@@ -46,7 +47,7 @@ STREAM_API_SECRET =
 TWILIO_ACCOUNT_SID = 
 TWILIO_AUTH_TOKEN = 
 TWILIO_MESSAGING_SERVICE_SID = 
-
+```
 
 
 
